@@ -15,12 +15,9 @@ P4-GSoC/
 │
 ├── README.md
 ├── LICENSE
-├── requirements.txt
-├── .gitignore
 │
 ├── p4/
 │   ├── NN_standard_classification_iris.p4
-│   ├── NN_standard_classification_iris.json
 │   └── NN_standard_classification_Iris.p4.p4info.txt
 │
 ├── artifacts/
@@ -29,11 +26,7 @@ P4-GSoC/
 │   ├── s1.log
 │   └── Planter_config.json
 │
-├── scripts/
-│   └── (optional reproduction or helper scripts)
-│
 └── docs/
-    ├── analysis.md
     └── screenshots/
 
 ---
