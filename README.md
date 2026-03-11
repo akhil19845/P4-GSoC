@@ -10,7 +10,7 @@ This Repository contains the artifacts and the complete workflow execution of Pl
 ---
 
 ## Repository Structure
-
+```
 P4-GSoC/
 │
 ├── README.md
@@ -28,7 +28,7 @@ P4-GSoC/
 │
 └── docs/
     └── screenshots/
-
+```
 ---
 
 # Setting up Environment
