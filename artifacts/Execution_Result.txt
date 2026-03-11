@@ -1,0 +1,445 @@
+ ____    ___                    __ 
+/\  _`\ /\_ \                  /\ \__ 
+\ \ \L\ \//\ \      __      ___\ \ ,_\    __  _ __ 
+ \ \ ,__/ \ \ \   /'__`\  /' _ `\ \ \/  /'__`/\`'__\ 
+  \ \ \/   \_\ \_/\ \L\.\_/\ \/\ \ \ \_/\  __\ \ \/ 
+   \ \_\   /\____\ \__/.\_\ \_\ \_\ \__\ \____\ \_\ 
+    \/_/   \/____/\/__/\/_/\/_/\/_/\/__/\/____/\/_/ 
+                                      Version 0.1.0
+
+Please set the following configurations:
++ Where is your data folder? (default = /home/ubuntu/Data) /home/ubuntu/Planter/Data
++ Where is your Planter folder? (default = /home/ubuntu/Planter) 
++ Which model do you want to plant? (default = DT | options = -h) NN
++ Which type (variation) of model do you want to plant? (default = 1 | options = -h) 1
++ Which dataset do you want to use? (default = UNSW_5_tuple | options = -h) Iris
++ Where is the number of features? (default = 4) 4
+= src/configs/Planter_config.json is generated
++ Use the testing mode or not? (default = y) y
+= Testing model open, at most 20000 input data and 5000 testing data will be used
+= The shape of the dataset -  train x:  (105, 4) train y:  (105,) test x:  (45, 4) test y:  (45,)
+= src/configs/Planter_config.json is generated
+= Add the following path: /home/ubuntu/Planter/src/models/NN/Type_1
+- Model learning rate? (default = 0.01) 0.01
+- Model batch size? (default = 10) 10
+- Number of training epoch? (default = 15) 20
+- Number of layers? (default = 3) 3
+- Number of hidden nodes for layer 1? (default = 56) 
+- Number of hidden nodes for layer 2? (default = 56) 
+Processing the raw data [##################################################] 100%
+Data set is ready
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 67.22it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 506.40it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9000    0.9474    0.9231        19
+           2     0.9167    0.8462    0.8800        13
+
+    accuracy                         0.9333        45
+   macro avg     0.9389    0.9312    0.9344        45
+weighted avg     0.9337    0.9333    0.9329        45
+
+Train Epoch 1    Loss: 0.843826  Test Accuracy 93.333    lr: 0.0100
+Best accuracy: 93.333 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 118.17it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 573.46it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 2    Loss: 0.283293  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 120.07it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 561.89it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 3    Loss: 0.134303  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 120.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 591.21it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 4    Loss: 0.076369  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 120.13it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 560.02it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 5    Loss: 0.044539  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 119.34it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 556.39it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 6    Loss: 0.031794  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 121.23it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 549.64it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 7    Loss: 0.020577  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 119.97it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 601.54it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 8    Loss: 0.015265  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 122.89it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 567.64it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 9    Loss: 0.011746  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 119.03it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 569.72it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 10   Loss: 0.009559  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 120.91it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 590.86it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 11   Loss: 0.008068  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 119.64it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 554.29it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 12   Loss: 0.007009  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 118.98it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 562.63it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 13   Loss: 0.006145  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 120.98it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 566.42it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 14   Loss: 0.005483  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 118.69it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 571.65it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 15   Loss: 0.004932  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 119.42it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 548.49it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 16   Loss: 0.004514  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 118.88it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 565.96it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 17   Loss: 0.004132  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 121.03it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 615.42it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 18   Loss: 0.003787  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 109.38it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 577.63it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 19   Loss: 0.003500  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 118.75it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 581.77it/s]
+
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        13
+           1     0.9500    0.9500    0.9500        20
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9556        45
+   macro avg     0.9556    0.9556    0.9556        45
+weighted avg     0.9556    0.9556    0.9556        45
+
+Train Epoch 20   Loss: 0.003251  Test Accuracy 95.556    lr: 0.0100
+Best accuracy: 95.556 
+Exact_Table is generated
+/home/ubuntu/Planter/src/configs/Planter_config.json is generated
++ Test the table or not? (default = y) y
+Test the exact feature table, extact code and decision table (feel free if the acc to sklearn is slightly lower than 1)
+switch_prediction: 1, test_y: 1, with acc: 0.911,  M/A format macro f1: 0.909
+The accuracy of the match action format of NN is 0.9111111111111111
+
+               precision    recall  f1-score   support
+
+           0     1.0000    0.8667    0.9286        15
+           1     0.8500    0.9444    0.8947        18
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9111        45
+   macro avg     0.9222    0.9093    0.9133        45
+weighted avg     0.9178    0.9111    0.9119        45
+
+= src/configs/Planter_config.json is generated
++ Which architecture do you use? (default = tna | options = -h) v1model
++ Which is the use case? (default = performance | options = -h) standard_classification
+= Add the following path: /home/ubuntu/Planter/src/use_cases/standard_classification
+= Add the following path: /home/ubuntu/Planter/src/architectures/v1model
+Generating p4 files and load data file... Done
++ What is the target device? (default = Tofino | options = -h) bmv2
++ Which type of mode do you want to choose? (default = software | options = -h) software
+= Dump the targets info to src/configs/Planter_config.json
+= Add the following path: /home/ubuntu/Planter/src/targets/bmv2/software
+- Send packets to which port? (default = 'eth0'): eth0
+- Please input your password for 'sudo' command: 
+current pid is 406466
+Generating test files ...
+Join all subprocess together ...
+sudo mn -c
+*** Removing excess controllers/ofprotocols/ofdatapaths/pings/noxes
+killall controller ofprotocol ofdatapath ping nox_corelt-nox_core ovs-openflowd ovs-controllerovs-testcontroller udpbwtest mnexec ivs ryu-manager 2> /dev/null
+killall -9 controller ofprotocol ofdatapath ping nox_corelt-nox_core ovs-openflowd ovs-controllerovs-testcontroller udpbwtest mnexec ivs ryu-manager 2> /dev/null
+pkill -9 -f "sudo mnexec"
+*** Removing junk from /tmp
+rm -f /tmp/vconn* /tmp/vlogs* /tmp/*.out /tmp/*.log
+*** Removing old X11 tunnels
+*** Removing excess kernel datapaths
+ps ax | egrep -o 'dp[0-9]+' | sed 's/dp/nl:/'
+***  Removing OVS datapaths
+ovs-vsctl --timeout=1 list-br
+ovs-vsctl --timeout=1 list-br
+*** Removing all links of the pattern foo-ethX
+ip link show | egrep -o '([-_.[:alnum:]]+-eth[[:digit:]]+)'
+ip link show
+*** Killing stale mininet node processes
+pkill -9 -f mininet:
+*** Shutting down stale tunnels
+pkill -9 -f Tunnel=Ethernet
+pkill -9 -f .ssh/mn
+rm -f ~/.ssh/mn/*
+*** Cleanup complete.
+rm -f *.pcap
+rm -rf build pcaps logs
+mkdir -p build pcaps logs
+p4c-bm2-ss --p4v 16 --p4runtime-files build/NN_standard_classification_Iris.p4.p4info.txt -o build/NN_standard_classification_Iris.json NN_standard_classification_Iris.p4
+NN_standard_classification_Iris.p4(195): [--Wwarn=unused] warning: 'drop' is unused
+    action drop() {
+           ^^^^
+[--Wwarn=deprecated] warning: .txt format is being deprecated; use .txtpb instead
+sudo /home/ubuntu/Planter/Build/bin/python3 ../../utils/run_exercise.py -t topology.json -j build/NN_standard_classification_Iris.json -b simple_switch
+Reading topology file.
+Building mininet topology.
+Configuring switch s1 with file s1-commands.txt
+s1 -> Thrift port: 9090
+**********
+h1
+default interface: eth0 10.0.1.1        08:00:00:00:01:01
+**********
+Starting mininet CLI
+
+======================================================================
+Welcome to the BMV2 Mininet CLI!
+======================================================================
+Your P4 program is installed into the BMV2 software switch
+and your initial runtime configuration is loaded. You can interact
+with the network using the mininet CLI below.
+
+To inspect or change the switch configuration, connect to
+its CLI from your host operating system using this command:
+  simple_switch_CLI --thrift-port <switch thrift port>
+
+To view a switch log, run this command from your host OS:
+  tail -f /home/ubuntu/Planter/src/targets/bmv2/software/model_test/test_environment/logs/<switchname>.log
+
+To view the switch output pcap, check the pcap files in /home/ubuntu/Planter/src/targets/bmv2/software/model_test/test_environment/pcaps:
+ for example run:  sudo tcpdump -xxx -r s1-eth1.pcap
+
+mininet> Predicted load table time ... (5.192s)
+
+==============================================================================================
+=        Two steps to exit Planter: 1. input 'exit', press 'return'; 2. press ctrl + c       =
+==============================================================================================
+Test the switch model, the result should be the same as previous python test
+Switch model 45th prediction: 1, test_y: 1, with acc: 0.911, with acc to sklearn: 0.9111, with error: 0.08889, M/A format macro f1: 0.9111, macro f1: 1.0
+
+               precision    recall  f1-score   support
+
+           0     1.0000    0.8667    0.9286        15
+           1     0.8500    0.9444    0.8947        18
+           2     0.9167    0.9167    0.9167        12
+
+    accuracy                         0.9111        45
+   macro avg     0.9222    0.9093    0.9133        45
+weighted avg     0.9178    0.9111    0.9119        45
+
+======================================= Test Finished ========================================
+mininet> 
+Process <load data> cost 0.0075s
+Process <train model> cost 2.2515s
+Process <convert model> cost 0.0114s
+Process <python-based test> cost 0.1106s

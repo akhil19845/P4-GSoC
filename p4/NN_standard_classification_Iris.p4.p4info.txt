@@ -1,0 +1,65 @@
+# proto-file: p4/config/v1/p4info.proto
+# proto-message: p4.config.v1.P4Info
+
+pkg_info {
+  arch: "v1model"
+}
+actions {
+  preamble {
+    id: 26568485
+    name: "SwitchIngress.send"
+    alias: "send"
+  }
+}
+actions {
+  preamble {
+    id: 28148238
+    name: "SwitchIngress.Layer0_Process"
+    alias: "Layer0_Process"
+  }
+}
+actions {
+  preamble {
+    id: 20336137
+    name: "SwitchIngress.Layer1_Process"
+    alias: "Layer1_Process"
+  }
+}
+actions {
+  preamble {
+    id: 27729544
+    name: "SwitchIngress.Layer2_Process"
+    alias: "Layer2_Process"
+  }
+}
+actions {
+  preamble {
+    id: 26156821
+    name: "SwitchIngress.compare"
+    alias: "compare"
+  }
+}
+actions {
+  preamble {
+    id: 29737037
+    name: "SwitchIngress.BuildInput"
+    alias: "BuildInput"
+  }
+}
+registers {
+  preamble {
+    id: 379512750
+    name: "SwitchIngress.weights"
+    alias: "weights"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 64
+      }
+    }
+  }
+  size: 1024
+}
+type_info {
+}

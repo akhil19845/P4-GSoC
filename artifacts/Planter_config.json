@@ -1,0 +1,71 @@
+{
+    "directory config": {
+        "data": "/home/ubuntu/Planter/Data",
+        "work": "/home/ubuntu/Planter"
+    },
+    "model config": {
+        "model": "NN",
+        "type": "1",
+        "number of classes": 3,
+        "learning rate": 0.01,
+        "batch size": 10,
+        "num epoch": 20,
+        "number of layers": 3,
+        "num hidden nodes": [
+            56,
+            56
+        ],
+        "test table": "y"
+    },
+    "data config": {
+        "dataset": "Iris",
+        "number of features": 4,
+        "testing mode": "y"
+    },
+    "timer log": {
+        "load data": {
+            "start": 1773189515.6136684,
+            "end": 1773189515.6211963
+        },
+        "train model": {
+            "start": 1773189532.8128974,
+            "end": 1773189535.064444
+        },
+        "convert model": {
+            "start": 1773189535.0644457,
+            "end": 1773189535.0758698
+        },
+        "python-based test": {
+            "start": 1773189543.3631854,
+            "end": 1773189543.4737835
+        }
+    },
+    "p4 config": {
+        "model": "NN",
+        "num hidden nodes": [
+            56,
+            56
+        ],
+        "number of features": 4,
+        "number of layers": 3,
+        "number of classes": 3,
+        "width of inputs": [
+            7.0,
+            6.0,
+            7.0,
+            5.0
+        ],
+        "table name": "Exact_Table.json"
+    },
+    "test config": {
+        "type of test": "classification",
+        "port": "eth0",
+        "sudo password": "password"
+    },
+    "target config": {
+        "architecture": "v1model",
+        "use case": "standard_classification",
+        "device": "bmv2",
+        "type": "software"
+    }
+}
